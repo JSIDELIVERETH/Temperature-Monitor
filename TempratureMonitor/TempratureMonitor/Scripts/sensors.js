@@ -6,8 +6,11 @@ window.onload = function () {
         value: getRandomInt(-20, 20),
         min: -20,
         max: 20,
+        titleFontColor: "#444444",
+        valueFontColor: "#444444",
+        labelFontColor: "#444444",
         title: "Cold Room 1",
-        label: "C"
+        label: "C°"
     });
 
      sensor2 = new JustGage({
@@ -15,17 +18,21 @@ window.onload = function () {
         value: getRandomInt(-20, 20),
         min: -20,
         max: 20,
+        valueFontColor: "#444444", labelFontColor: "#444444",
+        titleFontColor: "#444444",
         title: "Cold Room 2",
-        label: "C"
+        label: "C°"
     });
 
      sensor3 = new JustGage({
         id: "sensor3",
-        value: getRandomInt(-20, 20),
-        min: -20,
+        value: getRandomInt(-35, 20),
+        min: -35,
         max: 20,
+        valueFontColor: "#444444", labelFontColor: "#444444",
+        titleFontColor: "#444444",
         title: "Cold Room 3",
-        label: "C"
+        label: "C°"
     });
 
      sensor4 = new JustGage({
@@ -33,8 +40,10 @@ window.onload = function () {
         value: getRandomInt(-20, 20),
         min: -20,
         max: 20,
+        valueFontColor: "#444444", labelFontColor: "#444444",
+        titleFontColor: "#444444",
         title: "Cold Room 4",
-        label: "C"
+        label: "C°"
     });
 
      sensor5 = new JustGage({
@@ -42,8 +51,10 @@ window.onload = function () {
         value: getRandomInt(-20, 20),
         min: -20,
         max: 20,
+        valueFontColor: "#444444", labelFontColor: "#444444",
+        titleFontColor: "#444444",
         title: "Cold Room 5",
-        label: "C"
+        label: "C°"
     });
 
      sensor6 = new JustGage({
@@ -51,8 +62,10 @@ window.onload = function () {
         value: getRandomInt(-20, 20),
         min: -20,
         max: 20,
+        valueFontColor: "#444444", labelFontColor: "#444444",
+        titleFontColor: "#444444",
         title: "Cold Room 6",
-        label: "C"
+        label: "C°"
     });
     setInterval(UpdateGages, 2500);
 };
