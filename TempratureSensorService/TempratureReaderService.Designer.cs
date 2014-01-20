@@ -1,6 +1,6 @@
 ﻿namespace TempratureSensorService
 {
-    partial class Service1
+    partial class TempratureReaderService
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,10 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.components = new System.ComponentModel.Container();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // TempratureReaderService
+            // 
             this.ServiceName = "Service1";
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Timer timer1;
+
     }
 }
