@@ -28,9 +28,16 @@ namespace TempratureMonitor.Controllers
             string rowData = sensorService.GetLiveTempratureReading();
             if (String.IsNullOrEmpty(rowData) || !rowData.Contains(','))
                 return new List<double>();
-            rowData = rowData.Remove(0, 3);
 
-           return rowData.Split(',').Select(t => double.Parse(t)).ToList<double>();
+            try
+            {
+                rowData = rowData.Remove(0, 3);
+                return rowData.Split(',').Select(t => double.Parse(t)).ToList<double>();
+            }
+            catch (Exception ex)
+            {
+                return new List<double>();
+            }
         }
     }
 }
