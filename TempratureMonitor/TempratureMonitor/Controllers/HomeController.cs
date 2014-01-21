@@ -10,7 +10,7 @@ namespace TempratureMonitor.Controllers
     {
         //
         // GET: /Home/
-
+        public static HCMIS.SensorService.Service1SoapClient sensorService = new HCMIS.SensorService.Service1SoapClient();
         public ActionResult Index()
         {
             return View();
@@ -20,13 +20,17 @@ namespace TempratureMonitor.Controllers
         public JsonResult UpdatedTempratures()
         {
             Random random = new Random();
+            return Json(GetSensorReading());
+        }
 
-            List<int> SensorData = new List<int>()
-                {
-                    random.Next(-2, 6), random.Next(2, 8), random.Next(-35, 1),random.Next(0, 5),random.Next(0, 11), random.Next(0, 11)
-                };
+        public List<Double> GetSensorReading()
+        {
+            string rowData = sensorService.GetLiveTempratureReading();
+            if (String.IsNullOrEmpty(rowData) || !rowData.Contains(','))
+                return new List<double>();
+            rowData = rowData.Remove(0, 3);
 
-            return Json(SensorData);
+           return rowData.Split(',').Select(t => double.Parse(t)).ToList<double>();
         }
     }
 }

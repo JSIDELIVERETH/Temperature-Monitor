@@ -4,8 +4,8 @@ window.onload = function () {
      sensor1 = new JustGage({
         id: "sensor1",
         value: getRandomInt(-20, 20),
-        min: -20,
-        max: 20,
+        min: -2,
+        max: 10,
         titleFontColor: "#444444",
         valueFontColor: "#444444",
         labelFontColor: "#444444",
@@ -16,8 +16,8 @@ window.onload = function () {
      sensor2 = new JustGage({
         id: "sensor2",
         value: getRandomInt(-20, 20),
-        min: -20,
-        max: 20,
+        min: 0,
+        max: 10,
         valueFontColor: "#444444", labelFontColor: "#444444",
         titleFontColor: "#444444",
         title: "Cold Room 2",
@@ -27,8 +27,8 @@ window.onload = function () {
      sensor3 = new JustGage({
         id: "sensor3",
         value: getRandomInt(-35, 20),
-        min: -35,
-        max: 20,
+        min: 0,
+        max: 10,
         valueFontColor: "#444444", labelFontColor: "#444444",
         titleFontColor: "#444444",
         title: "Cold Room 3",
@@ -39,7 +39,7 @@ window.onload = function () {
         id: "sensor4",
         value: getRandomInt(-20, 20),
         min: -20,
-        max: 20,
+        max: 5,
         valueFontColor: "#444444", labelFontColor: "#444444",
         titleFontColor: "#444444",
         title: "Cold Room 4",
@@ -49,24 +49,14 @@ window.onload = function () {
      sensor5 = new JustGage({
         id: "sensor5",
         value: getRandomInt(-20, 20),
-        min: -20,
-        max: 20,
+        min: 0,
+        max: 10,
         valueFontColor: "#444444", labelFontColor: "#444444",
         titleFontColor: "#444444",
         title: "Cold Room 5",
         label: "C°"
     });
 
-     sensor6 = new JustGage({
-        id: "sensor6",
-        value: getRandomInt(-20, 20),
-        min: -20,
-        max: 20,
-        valueFontColor: "#444444", labelFontColor: "#444444",
-        titleFontColor: "#444444",
-        title: "Cold Room 6",
-        label: "C°"
-    });
     setInterval(UpdateGages, 2500);
 };
 
@@ -86,7 +76,6 @@ function UpdateGages() {
                     sensor3.refresh(tempratureData[2]);
                     sensor4.refresh(tempratureData[3]);
                     sensor5.refresh(tempratureData[4]);
-                    sensor6.refresh(tempratureData[5]);
                 }
             }
         })
