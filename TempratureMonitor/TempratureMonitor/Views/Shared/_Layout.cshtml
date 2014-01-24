@@ -4,18 +4,31 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+
     <script src="~/Bootstrap/dist/js/bootstrap.min.js"></script>
+
     <script src="~/Scripts/justGage/raphael.2.1.0.min.js"></script>
     <script src="~/Scripts/justGage/justgage.1.0.1.min.js"></script>
+    
+    <script src="~/Scripts/Chart.js/Chart.min.js"></script>
     <script src="~/Scripts/sensors.js"></script>
+    <script src="~/Scripts/charts.js"></script>
 
     <link rel="stylesheet" href="~/Bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/StyleSheet.css" />
     <title>@ViewBag.Title</title>
 </head>
-<body style="background-color:whitesmoke;">
-    <div class="content" >
+
+<body style="background-color: #f2f2f2">
+
+    <div class="row" style="background-color: white; margin-bottom: 0px;">
+        <h2 style="color: #54547F">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>HCMIS</strong> Vaccine Temprature Dashboard</h2>
+        <hr style="margin: 4px;" />
+    </div>
+
+    <div class="content">
         @RenderBody()
     </div>
 </body>
+
 </html>

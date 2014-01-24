@@ -16,7 +16,7 @@ namespace TempratureSensorService
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[] 
             { 
-                new TempratureReaderService() 
+                new TempratureSensorService() 
             };
             ServiceBase.Run(ServicesToRun);
         }

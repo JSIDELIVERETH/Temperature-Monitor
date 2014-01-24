@@ -1,6 +1,7 @@
 ﻿var sensor1, sensor2, sensor3, sensor4, sensor5;
 
 window.onload = function () {
+   
     sensor1 = new JustGage({
         id: "sensor1",
         value: 0,
@@ -102,6 +103,7 @@ window.onload = function () {
     });
 
     setInterval(UpdateGages, 5000);
+    LoadCharts();
 };
 
 function UpdateGages() {

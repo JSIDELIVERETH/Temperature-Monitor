@@ -1,7 +1,8 @@
 D:\Projects\Primary\TempratureMonitor\TempratureSensorService\obj\Debug\TempratureSensorService.csprojResolveAssemblyReference.cache
-D:\Projects\Primary\TempratureMonitor\TempratureSensorService\obj\Debug\TempratureSensorService.TempratureReaderService.resources
 D:\Projects\Primary\TempratureMonitor\TempratureSensorService\obj\Debug\TempratureSensorService.csproj.GenerateResource.Cache
 D:\Projects\Primary\TempratureMonitor\TempratureSensorService\bin\Debug\TempratureSensorService.exe
 D:\Projects\Primary\TempratureMonitor\TempratureSensorService\bin\Debug\TempratureSensorService.pdb
 D:\Projects\Primary\TempratureMonitor\TempratureSensorService\obj\Debug\TempratureSensorService.exe
 D:\Projects\Primary\TempratureMonitor\TempratureSensorService\obj\Debug\TempratureSensorService.pdb
+D:\Projects\Primary\TempratureMonitor\TempratureSensorService\obj\Debug\TempratureSensorService.ProjectInstaller.resources
+D:\Projects\Primary\TempratureMonitor\TempratureSensorService\obj\Debug\TempratureSensorService.TempratureSensorService.resources

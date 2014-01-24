@@ -1,16 +1,34 @@
 ﻿body {
 }
 
-      /*#sensor1, #sensor2, #sensor3, #sensor4{
-        width:400px; height:320px;
-        display: inline-block;
-        margin: 1em;
-      }*/
+.Gage{
+margin-left:0px;margin-right:0px;
+width:17%; height:140px;
+display: inline-block;
+margin: 1em;
+color:white;
+}
 
-      .Gage{
-          margin-left:0px;margin-right:0px;
-        width:17%; height:140px;
-        display: inline-block;
-        margin: 1em;
-        color:white;
-      }
+
+.ChartHolder {
+height: 100%; 
+width: 90%;
+margin-left: auto; 
+margin-right: auto; 
+background-color: white;
+border-color:gray;
+border-radius:1px;
+border-width:1px;
+z-index:9;
+}
+
+.shadow {
+-moz-box-shadow: 0 0 30px 5px #808080;
+-webkit-box-shadow: 0 0 30px 5px #808080;
+}
+
+.shadowBottom {
+    -webkit-box-shadow: 0px 1px 5px #373737;
+    -moz-box-shadow: 0px 1px 5px #373737;
+    box-shadow:  0 10px 12px -2px gray;
+}

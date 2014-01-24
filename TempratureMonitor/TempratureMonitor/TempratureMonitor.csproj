@@ -131,6 +131,8 @@
     <Content Include="Bootstrap\dist\js\bootstrap.js" />
     <Content Include="Bootstrap\dist\js\bootstrap.min.js" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\Chart.js\Chart.min.js" />
+    <Content Include="Scripts\charts.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\justGage\justgage.1.0.1.js" />
     <Content Include="Scripts\justGage\justgage.1.0.1.min.js" />
@@ -164,6 +166,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="ViewModel\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

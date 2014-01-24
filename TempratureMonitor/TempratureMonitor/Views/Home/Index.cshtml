@@ -2,8 +2,11 @@
     ViewBag.Title = "Vaccine Cold Room Temprature Dashboard";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<style>
 
-<div class="row"  style="background-color: #dddddd;">
+</style>
+
+<div class="shadowBottom"  style="width:100%;margin:0px;background-color: #fafafa;">
     <div class="Gage" id="sensor1"></div>
     <div class="Gage" id="sensor2"></div>
     <div class="Gage" id="sensor3"></div>
@@ -11,45 +14,8 @@
     <div class="Gage" id="sensor5"></div>
 </div>
 
-<div class="row" style="height: 100%; width: 90%; margin-left: auto; margin-right: auto; background-color: white;">
-    <br />
-     <table class="table" style="width:95%;margin-left:auto;margin-right:auto;">
-        <thead>
-            <tr>
-                <td>Cold Room 1</td>
-                <td>Cold Room 2</td>
-                <td>Cold Room 3</td>
-                <td>Cold Room 4</td>
-                <td>Cold Room 5</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-          <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </tbody>
-
-    </table>
-
-    <div style="height:4009px;"></div>
+<div class="row ChartHolder" style="height:400px;">
+       <canvas id="canvas" height="400" width="1200"></canvas>@* *@
 </div>
 
 
