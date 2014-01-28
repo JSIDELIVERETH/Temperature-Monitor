@@ -1,0 +1,13 @@
+﻿Installing assembly 'd:\Projects\Primary\TempratureMonitor\TempratureSensorService\bin\Debug\TempratureSensorService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = d:\Projects\Primary\TempratureMonitor\TempratureSensorService\bin\Debug\TempratureSensorService.InstallLog
+   assemblypath = d:\Projects\Primary\TempratureMonitor\TempratureSensorService\bin\Debug\TempratureSensorService.exe
+Installing service TempratureReaderService...
+Creating EventLog source TempratureReaderService in log Application...
+Rolling back assembly 'd:\Projects\Primary\TempratureMonitor\TempratureSensorService\bin\Debug\TempratureSensorService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = d:\Projects\Primary\TempratureMonitor\TempratureSensorService\bin\Debug\TempratureSensorService.InstallLog
+   assemblypath = d:\Projects\Primary\TempratureMonitor\TempratureSensorService\bin\Debug\TempratureSensorService.exe
+Restoring event log to previous state for source TempratureReaderService.

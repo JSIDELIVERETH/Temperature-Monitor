@@ -103,7 +103,7 @@ window.onload = function () {
     });
 
     setInterval(UpdateGages, 5000);
-    LoadCharts();
+    LoadChart();
 };
 
 function UpdateGages() {
@@ -115,20 +115,25 @@ function UpdateGages() {
             dataType: "html",
             success: function (data, textStatus, XMLHttpRequest) {
                 var tempratureData = JSON.parse(data);
-                if (data) {
+                if (data)
+                {
                     try {
                         sensor1.refresh(tempratureData[0]);
                         sensor2.refresh(tempratureData[1]);
                         sensor3.refresh(tempratureData[2]);
                         sensor4.refresh(tempratureData[3]);
                         sensor5.refresh(tempratureData[4]);
+
+                        //Update(dataSource, time, Sensor1Value, Sensor2Value, Sensor3Value, Sensor4Value, Sensor5Value)
+
+                        UpdateChart(Date.now, tempratureData[0], tempratureData[1], tempratureData[2], tempratureData[3], tempratureData[4]);
                     }
                     catch (x) {
-                        sensor1.refresh(-47);
-                        sensor2.refresh(-47);
-                        sensor3.refresh(-47);
-                        sensor4.refresh(-47);
-                        sensor5.refresh(-47);
+                        sensor1.refresh(-273);
+                        sensor2.refresh(-273);
+                        sensor3.refresh(-273);
+                        sensor4.refresh(-273);
+                        sensor5.refresh(-273);
                     }
                 }
             }

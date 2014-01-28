@@ -24,6 +24,19 @@ namespace TempratureMonitor.Controllers
             return Json(GetSensorReading());
         }
 
+        public List<Double> GetFakeSensorReading()
+        {
+            Random rnd = new Random();
+            return new List<double>
+            {
+                rnd.Next(1, 8),
+                rnd.Next(1, 8),
+                rnd.Next(1, 8),
+                rnd.Next(-20, -10),
+                rnd.Next(1, 8)
+            };
+        }
+
         public List<Double> GetSensorReading()
         {
             if (Ping("192.168.2.154") == true)

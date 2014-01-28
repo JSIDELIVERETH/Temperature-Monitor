@@ -138,13 +138,13 @@
     <Content Include="Scripts\justGage\justgage.1.0.1.min.js" />
     <Content Include="Scripts\justGage\raphael.2.1.0.min.js" />
     <Content Include="Scripts\sensors.js" />
-    <Content Include="Service References\HCMIS.SensorService\Service1.disco" />
-    <Content Include="Service References\HCMIS.SensorService\configuration91.svcinfo" />
-    <Content Include="Service References\HCMIS.SensorService\configuration.svcinfo" />
-    <Content Include="Service References\HCMIS.SensorService\Reference.svcmap">
+    <None Include="Service References\HCMIS.SensorService\Service1.disco" />
+    <None Include="Service References\HCMIS.SensorService\configuration91.svcinfo" />
+    <None Include="Service References\HCMIS.SensorService\configuration.svcinfo" />
+    <None Include="Service References\HCMIS.SensorService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
-    </Content>
+    </None>
     <Content Include="StyleSheet.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -166,6 +166,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="NewFolder1\" />
     <Folder Include="ViewModel\" />
   </ItemGroup>
   <ItemGroup>
@@ -189,7 +190,7 @@
     <WCFMetadataStorage Include="Service References\HCMIS.SensorService\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Service References\HCMIS.SensorService\Service1.wsdl" />
+    <None Include="Service References\HCMIS.SensorService\Service1.wsdl" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
