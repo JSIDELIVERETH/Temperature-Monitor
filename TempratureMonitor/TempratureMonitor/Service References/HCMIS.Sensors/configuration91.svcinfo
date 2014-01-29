@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="UjxF9aPh4Lqlbmb0Zb83aBsPA9s=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="0+Hh+/WaOHHh4S4MPACsyPT7AK8=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="Service1Soap">
       <properties>
@@ -112,7 +112,7 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="Service1Soap" contract="HCMIS.SensorService.Service1Soap" bindingType="basicHttpBinding" address="http://192.168.2.154/Sensorservice/Service1.asmx" bindingConfiguration="Service1Soap">
+    <endpoint name="Service1Soap" contract="HCMIS.Sensors.Service1Soap" bindingType="basicHttpBinding" address="http://192.168.2.154/Sensorservice/Service1.asmx" bindingConfiguration="Service1Soap">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>http://192.168.2.154/Sensorservice/Service1.asmx</serializedValue>
@@ -127,7 +127,7 @@
           <serializedValue>Service1Soap</serializedValue>
         </property>
         <property path="/contract" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>HCMIS.SensorService.Service1Soap</serializedValue>
+          <serializedValue>HCMIS.Sensors.Service1Soap</serializedValue>
         </property>
         <property path="/headers" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.AddressHeaderCollectionElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>System.ServiceModel.Configuration.AddressHeaderCollectionElement</serializedValue>

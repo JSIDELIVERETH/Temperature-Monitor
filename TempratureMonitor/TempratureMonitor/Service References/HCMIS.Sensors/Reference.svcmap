@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="dde48222-de89-437f-bd53-e16f647df029" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d369350f-8175-4be8-a34a-5211b3817937" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,8 +22,8 @@
     <MetadataSource Address="http://192.168.2.154/Sensorservice/Service1.asmx" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="0673023c-e346-4d2c-ad4b-06a4334f7718" SourceId="1" SourceUrl="http://192.168.2.154/Sensorservice/Service1.asmx?wsdl" />
-    <MetadataFile FileName="Service1.disco" MetadataType="Disco" ID="d402dc35-e8c0-45a6-95e0-917e4581661a" SourceId="1" SourceUrl="http://192.168.2.154/Sensorservice/Service1.asmx?disco" />
+    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="5120cf77-939c-47e1-b18b-1d3e872925ac" SourceId="1" SourceUrl="http://192.168.2.154/Sensorservice/Service1.asmx?wsdl" />
+    <MetadataFile FileName="Service1.disco" MetadataType="Disco" ID="0d8cbbdd-e277-4e6c-83c5-5ed716a8af36" SourceId="1" SourceUrl="http://192.168.2.154/Sensorservice/Service1.asmx?disco" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

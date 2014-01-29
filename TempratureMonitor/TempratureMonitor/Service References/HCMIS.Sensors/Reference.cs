@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TempratureMonitor.HCMIS.SensorService {
+namespace TempratureMonitor.HCMIS.Sensors {
     using System.Runtime.Serialization;
     using System;
     
@@ -21,22 +21,22 @@ namespace TempratureMonitor.HCMIS.SensorService {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://SenserService.hcmis.org/", ConfigurationName="HCMIS.SensorService.Service1Soap")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://SenserService.hcmis.org/", ConfigurationName="HCMIS.Sensors.Service1Soap")]
     public interface Service1Soap {
         
         // CODEGEN: Generating message contract since element name GetLatestTempratureReadingFromDBResult from namespace http://SenserService.hcmis.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://SenserService.hcmis.org/GetLatestTempratureReadingFromDB", ReplyAction="*")]
-        TempratureMonitor.HCMIS.SensorService.GetLatestTempratureReadingFromDBResponse GetLatestTempratureReadingFromDB(TempratureMonitor.HCMIS.SensorService.GetLatestTempratureReadingFromDBRequest request);
+        TempratureMonitor.HCMIS.Sensors.GetLatestTempratureReadingFromDBResponse GetLatestTempratureReadingFromDB(TempratureMonitor.HCMIS.Sensors.GetLatestTempratureReadingFromDBRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://SenserService.hcmis.org/GetLatestTempratureReadingFromDB", ReplyAction="*")]
-        System.Threading.Tasks.Task<TempratureMonitor.HCMIS.SensorService.GetLatestTempratureReadingFromDBResponse> GetLatestTempratureReadingFromDBAsync(TempratureMonitor.HCMIS.SensorService.GetLatestTempratureReadingFromDBRequest request);
+        System.Threading.Tasks.Task<TempratureMonitor.HCMIS.Sensors.GetLatestTempratureReadingFromDBResponse> GetLatestTempratureReadingFromDBAsync(TempratureMonitor.HCMIS.Sensors.GetLatestTempratureReadingFromDBRequest request);
         
         // CODEGEN: Generating message contract since element name GetLiveTempratureReadingResult from namespace http://SenserService.hcmis.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://SenserService.hcmis.org/GetLiveTempratureReading", ReplyAction="*")]
-        TempratureMonitor.HCMIS.SensorService.GetLiveTempratureReadingResponse GetLiveTempratureReading(TempratureMonitor.HCMIS.SensorService.GetLiveTempratureReadingRequest request);
+        TempratureMonitor.HCMIS.Sensors.GetLiveTempratureReadingResponse GetLiveTempratureReading(TempratureMonitor.HCMIS.Sensors.GetLiveTempratureReadingRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://SenserService.hcmis.org/GetLiveTempratureReading", ReplyAction="*")]
-        System.Threading.Tasks.Task<TempratureMonitor.HCMIS.SensorService.GetLiveTempratureReadingResponse> GetLiveTempratureReadingAsync(TempratureMonitor.HCMIS.SensorService.GetLiveTempratureReadingRequest request);
+        System.Threading.Tasks.Task<TempratureMonitor.HCMIS.Sensors.GetLiveTempratureReadingResponse> GetLiveTempratureReadingAsync(TempratureMonitor.HCMIS.Sensors.GetLiveTempratureReadingRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -46,12 +46,12 @@ namespace TempratureMonitor.HCMIS.SensorService {
     public partial class GetLatestTempratureReadingFromDBRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetLatestTempratureReadingFromDB", Namespace="http://SenserService.hcmis.org/", Order=0)]
-        public TempratureMonitor.HCMIS.SensorService.GetLatestTempratureReadingFromDBRequestBody Body;
+        public TempratureMonitor.HCMIS.Sensors.GetLatestTempratureReadingFromDBRequestBody Body;
         
         public GetLatestTempratureReadingFromDBRequest() {
         }
         
-        public GetLatestTempratureReadingFromDBRequest(TempratureMonitor.HCMIS.SensorService.GetLatestTempratureReadingFromDBRequestBody Body) {
+        public GetLatestTempratureReadingFromDBRequest(TempratureMonitor.HCMIS.Sensors.GetLatestTempratureReadingFromDBRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -73,12 +73,12 @@ namespace TempratureMonitor.HCMIS.SensorService {
     public partial class GetLatestTempratureReadingFromDBResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetLatestTempratureReadingFromDBResponse", Namespace="http://SenserService.hcmis.org/", Order=0)]
-        public TempratureMonitor.HCMIS.SensorService.GetLatestTempratureReadingFromDBResponseBody Body;
+        public TempratureMonitor.HCMIS.Sensors.GetLatestTempratureReadingFromDBResponseBody Body;
         
         public GetLatestTempratureReadingFromDBResponse() {
         }
         
-        public GetLatestTempratureReadingFromDBResponse(TempratureMonitor.HCMIS.SensorService.GetLatestTempratureReadingFromDBResponseBody Body) {
+        public GetLatestTempratureReadingFromDBResponse(TempratureMonitor.HCMIS.Sensors.GetLatestTempratureReadingFromDBResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -90,12 +90,12 @@ namespace TempratureMonitor.HCMIS.SensorService {
     public partial class GetLatestTempratureReadingFromDBResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public TempratureMonitor.HCMIS.SensorService.ArrayOfString GetLatestTempratureReadingFromDBResult;
+        public TempratureMonitor.HCMIS.Sensors.ArrayOfString GetLatestTempratureReadingFromDBResult;
         
         public GetLatestTempratureReadingFromDBResponseBody() {
         }
         
-        public GetLatestTempratureReadingFromDBResponseBody(TempratureMonitor.HCMIS.SensorService.ArrayOfString GetLatestTempratureReadingFromDBResult) {
+        public GetLatestTempratureReadingFromDBResponseBody(TempratureMonitor.HCMIS.Sensors.ArrayOfString GetLatestTempratureReadingFromDBResult) {
             this.GetLatestTempratureReadingFromDBResult = GetLatestTempratureReadingFromDBResult;
         }
     }
@@ -107,12 +107,12 @@ namespace TempratureMonitor.HCMIS.SensorService {
     public partial class GetLiveTempratureReadingRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetLiveTempratureReading", Namespace="http://SenserService.hcmis.org/", Order=0)]
-        public TempratureMonitor.HCMIS.SensorService.GetLiveTempratureReadingRequestBody Body;
+        public TempratureMonitor.HCMIS.Sensors.GetLiveTempratureReadingRequestBody Body;
         
         public GetLiveTempratureReadingRequest() {
         }
         
-        public GetLiveTempratureReadingRequest(TempratureMonitor.HCMIS.SensorService.GetLiveTempratureReadingRequestBody Body) {
+        public GetLiveTempratureReadingRequest(TempratureMonitor.HCMIS.Sensors.GetLiveTempratureReadingRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -134,12 +134,12 @@ namespace TempratureMonitor.HCMIS.SensorService {
     public partial class GetLiveTempratureReadingResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetLiveTempratureReadingResponse", Namespace="http://SenserService.hcmis.org/", Order=0)]
-        public TempratureMonitor.HCMIS.SensorService.GetLiveTempratureReadingResponseBody Body;
+        public TempratureMonitor.HCMIS.Sensors.GetLiveTempratureReadingResponseBody Body;
         
         public GetLiveTempratureReadingResponse() {
         }
         
-        public GetLiveTempratureReadingResponse(TempratureMonitor.HCMIS.SensorService.GetLiveTempratureReadingResponseBody Body) {
+        public GetLiveTempratureReadingResponse(TempratureMonitor.HCMIS.Sensors.GetLiveTempratureReadingResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -162,12 +162,12 @@ namespace TempratureMonitor.HCMIS.SensorService {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface Service1SoapChannel : TempratureMonitor.HCMIS.SensorService.Service1Soap, System.ServiceModel.IClientChannel {
+    public interface Service1SoapChannel : TempratureMonitor.HCMIS.Sensors.Service1Soap, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class Service1SoapClient : System.ServiceModel.ClientBase<TempratureMonitor.HCMIS.SensorService.Service1Soap>, TempratureMonitor.HCMIS.SensorService.Service1Soap {
+    public partial class Service1SoapClient : System.ServiceModel.ClientBase<TempratureMonitor.HCMIS.Sensors.Service1Soap>, TempratureMonitor.HCMIS.Sensors.Service1Soap {
         
         public Service1SoapClient() {
         }
@@ -189,49 +189,49 @@ namespace TempratureMonitor.HCMIS.SensorService {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        TempratureMonitor.HCMIS.SensorService.GetLatestTempratureReadingFromDBResponse TempratureMonitor.HCMIS.SensorService.Service1Soap.GetLatestTempratureReadingFromDB(TempratureMonitor.HCMIS.SensorService.GetLatestTempratureReadingFromDBRequest request) {
+        TempratureMonitor.HCMIS.Sensors.GetLatestTempratureReadingFromDBResponse TempratureMonitor.HCMIS.Sensors.Service1Soap.GetLatestTempratureReadingFromDB(TempratureMonitor.HCMIS.Sensors.GetLatestTempratureReadingFromDBRequest request) {
             return base.Channel.GetLatestTempratureReadingFromDB(request);
         }
         
-        public TempratureMonitor.HCMIS.SensorService.ArrayOfString GetLatestTempratureReadingFromDB() {
-            TempratureMonitor.HCMIS.SensorService.GetLatestTempratureReadingFromDBRequest inValue = new TempratureMonitor.HCMIS.SensorService.GetLatestTempratureReadingFromDBRequest();
-            inValue.Body = new TempratureMonitor.HCMIS.SensorService.GetLatestTempratureReadingFromDBRequestBody();
-            TempratureMonitor.HCMIS.SensorService.GetLatestTempratureReadingFromDBResponse retVal = ((TempratureMonitor.HCMIS.SensorService.Service1Soap)(this)).GetLatestTempratureReadingFromDB(inValue);
+        public TempratureMonitor.HCMIS.Sensors.ArrayOfString GetLatestTempratureReadingFromDB() {
+            TempratureMonitor.HCMIS.Sensors.GetLatestTempratureReadingFromDBRequest inValue = new TempratureMonitor.HCMIS.Sensors.GetLatestTempratureReadingFromDBRequest();
+            inValue.Body = new TempratureMonitor.HCMIS.Sensors.GetLatestTempratureReadingFromDBRequestBody();
+            TempratureMonitor.HCMIS.Sensors.GetLatestTempratureReadingFromDBResponse retVal = ((TempratureMonitor.HCMIS.Sensors.Service1Soap)(this)).GetLatestTempratureReadingFromDB(inValue);
             return retVal.Body.GetLatestTempratureReadingFromDBResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<TempratureMonitor.HCMIS.SensorService.GetLatestTempratureReadingFromDBResponse> TempratureMonitor.HCMIS.SensorService.Service1Soap.GetLatestTempratureReadingFromDBAsync(TempratureMonitor.HCMIS.SensorService.GetLatestTempratureReadingFromDBRequest request) {
+        System.Threading.Tasks.Task<TempratureMonitor.HCMIS.Sensors.GetLatestTempratureReadingFromDBResponse> TempratureMonitor.HCMIS.Sensors.Service1Soap.GetLatestTempratureReadingFromDBAsync(TempratureMonitor.HCMIS.Sensors.GetLatestTempratureReadingFromDBRequest request) {
             return base.Channel.GetLatestTempratureReadingFromDBAsync(request);
         }
         
-        public System.Threading.Tasks.Task<TempratureMonitor.HCMIS.SensorService.GetLatestTempratureReadingFromDBResponse> GetLatestTempratureReadingFromDBAsync() {
-            TempratureMonitor.HCMIS.SensorService.GetLatestTempratureReadingFromDBRequest inValue = new TempratureMonitor.HCMIS.SensorService.GetLatestTempratureReadingFromDBRequest();
-            inValue.Body = new TempratureMonitor.HCMIS.SensorService.GetLatestTempratureReadingFromDBRequestBody();
-            return ((TempratureMonitor.HCMIS.SensorService.Service1Soap)(this)).GetLatestTempratureReadingFromDBAsync(inValue);
+        public System.Threading.Tasks.Task<TempratureMonitor.HCMIS.Sensors.GetLatestTempratureReadingFromDBResponse> GetLatestTempratureReadingFromDBAsync() {
+            TempratureMonitor.HCMIS.Sensors.GetLatestTempratureReadingFromDBRequest inValue = new TempratureMonitor.HCMIS.Sensors.GetLatestTempratureReadingFromDBRequest();
+            inValue.Body = new TempratureMonitor.HCMIS.Sensors.GetLatestTempratureReadingFromDBRequestBody();
+            return ((TempratureMonitor.HCMIS.Sensors.Service1Soap)(this)).GetLatestTempratureReadingFromDBAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        TempratureMonitor.HCMIS.SensorService.GetLiveTempratureReadingResponse TempratureMonitor.HCMIS.SensorService.Service1Soap.GetLiveTempratureReading(TempratureMonitor.HCMIS.SensorService.GetLiveTempratureReadingRequest request) {
+        TempratureMonitor.HCMIS.Sensors.GetLiveTempratureReadingResponse TempratureMonitor.HCMIS.Sensors.Service1Soap.GetLiveTempratureReading(TempratureMonitor.HCMIS.Sensors.GetLiveTempratureReadingRequest request) {
             return base.Channel.GetLiveTempratureReading(request);
         }
         
         public string GetLiveTempratureReading() {
-            TempratureMonitor.HCMIS.SensorService.GetLiveTempratureReadingRequest inValue = new TempratureMonitor.HCMIS.SensorService.GetLiveTempratureReadingRequest();
-            inValue.Body = new TempratureMonitor.HCMIS.SensorService.GetLiveTempratureReadingRequestBody();
-            TempratureMonitor.HCMIS.SensorService.GetLiveTempratureReadingResponse retVal = ((TempratureMonitor.HCMIS.SensorService.Service1Soap)(this)).GetLiveTempratureReading(inValue);
+            TempratureMonitor.HCMIS.Sensors.GetLiveTempratureReadingRequest inValue = new TempratureMonitor.HCMIS.Sensors.GetLiveTempratureReadingRequest();
+            inValue.Body = new TempratureMonitor.HCMIS.Sensors.GetLiveTempratureReadingRequestBody();
+            TempratureMonitor.HCMIS.Sensors.GetLiveTempratureReadingResponse retVal = ((TempratureMonitor.HCMIS.Sensors.Service1Soap)(this)).GetLiveTempratureReading(inValue);
             return retVal.Body.GetLiveTempratureReadingResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<TempratureMonitor.HCMIS.SensorService.GetLiveTempratureReadingResponse> TempratureMonitor.HCMIS.SensorService.Service1Soap.GetLiveTempratureReadingAsync(TempratureMonitor.HCMIS.SensorService.GetLiveTempratureReadingRequest request) {
+        System.Threading.Tasks.Task<TempratureMonitor.HCMIS.Sensors.GetLiveTempratureReadingResponse> TempratureMonitor.HCMIS.Sensors.Service1Soap.GetLiveTempratureReadingAsync(TempratureMonitor.HCMIS.Sensors.GetLiveTempratureReadingRequest request) {
             return base.Channel.GetLiveTempratureReadingAsync(request);
         }
         
-        public System.Threading.Tasks.Task<TempratureMonitor.HCMIS.SensorService.GetLiveTempratureReadingResponse> GetLiveTempratureReadingAsync() {
-            TempratureMonitor.HCMIS.SensorService.GetLiveTempratureReadingRequest inValue = new TempratureMonitor.HCMIS.SensorService.GetLiveTempratureReadingRequest();
-            inValue.Body = new TempratureMonitor.HCMIS.SensorService.GetLiveTempratureReadingRequestBody();
-            return ((TempratureMonitor.HCMIS.SensorService.Service1Soap)(this)).GetLiveTempratureReadingAsync(inValue);
+        public System.Threading.Tasks.Task<TempratureMonitor.HCMIS.Sensors.GetLiveTempratureReadingResponse> GetLiveTempratureReadingAsync() {
+            TempratureMonitor.HCMIS.Sensors.GetLiveTempratureReadingRequest inValue = new TempratureMonitor.HCMIS.Sensors.GetLiveTempratureReadingRequest();
+            inValue.Body = new TempratureMonitor.HCMIS.Sensors.GetLiveTempratureReadingRequestBody();
+            return ((TempratureMonitor.HCMIS.Sensors.Service1Soap)(this)).GetLiveTempratureReadingAsync(inValue);
         }
     }
 }

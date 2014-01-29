@@ -11,7 +11,7 @@ namespace TempratureMonitor.Controllers
     {
         //
         // GET: /Home/
-        public static HCMIS.SensorService.Service1SoapClient sensorService = new HCMIS.SensorService.Service1SoapClient();
+        public static HCMIS.Sensors.Service1SoapClient sensorService = new HCMIS.Sensors.Service1SoapClient();
         public ActionResult Index()
         {
             return View();
