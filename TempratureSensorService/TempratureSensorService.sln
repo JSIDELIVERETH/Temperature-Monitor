@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempratureSensorService", "TempratureSensorService.csproj", "{ED195DEC-F9FC-4F87-BBDA-94D655FFAE0A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "..\Service\Service.csproj", "{952FBD85-5E84-4108-A9B0-3EB3D9E8663B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{9A536F4D-4008-4987-9A9B-A2074390639B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,8 +17,15 @@ Global
 		{ED195DEC-F9FC-4F87-BBDA-94D655FFAE0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED195DEC-F9FC-4F87-BBDA-94D655FFAE0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED195DEC-F9FC-4F87-BBDA-94D655FFAE0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{952FBD85-5E84-4108-A9B0-3EB3D9E8663B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{952FBD85-5E84-4108-A9B0-3EB3D9E8663B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{952FBD85-5E84-4108-A9B0-3EB3D9E8663B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{952FBD85-5E84-4108-A9B0-3EB3D9E8663B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{952FBD85-5E84-4108-A9B0-3EB3D9E8663B} = {9A536F4D-4008-4987-9A9B-A2074390639B}
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="TemperatureSensorDataModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="TemperatureSensorDataModelStoreContainer">
+          <EntitySet Name="Sensor" EntityType="TemperatureSensorDataModel.Store.Sensor" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SensorArray" EntityType="TemperatureSensorDataModel.Store.SensorArray" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TempratureReading" EntityType="TemperatureSensorDataModel.Store.TempratureReading" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK__Sensor__SensorAr__1273C1CD" Association="TemperatureSensorDataModel.Store.FK__Sensor__SensorAr__1273C1CD">
+            <End Role="SensorArray" EntitySet="SensorArray" />
+            <End Role="Sensor" EntitySet="Sensor" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Tempratur__Senso__15502E78" Association="TemperatureSensorDataModel.Store.FK__Tempratur__Senso__15502E78">
+            <End Role="Sensor" EntitySet="Sensor" />
+            <End Role="TempratureReading" EntitySet="TempratureReading" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Sensor">
+          <Key>
+            <PropertyRef Name="SensorID" />
+          </Key>
+          <Property Name="SensorID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="NAME" Type="varchar" Nullable="false" MaxLength="300" />
+          <Property Name="SensorArrayID" Type="int" />
+          <Property Name="Description" Type="varchar" Nullable="false" MaxLength="300" />
+        </EntityType>
+        <EntityType Name="SensorArray">
+          <Key>
+            <PropertyRef Name="SensorArrayID" />
+          </Key>
+          <Property Name="SensorArrayID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="varchar" Nullable="false" MaxLength="300" />
+          <Property Name="Description" Type="varchar" MaxLength="300" />
+        </EntityType>
+        <EntityType Name="TempratureReading">
+          <Key>
+            <PropertyRef Name="TempratureReadingID" />
+          </Key>
+          <Property Name="TempratureReadingID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="SensorID" Type="int" />
+          <Property Name="Temprature" Type="float" Nullable="false" />
+          <Property Name="TimeStamp" Type="datetime" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__Sensor__SensorAr__1273C1CD">
+          <End Role="SensorArray" Type="TemperatureSensorDataModel.Store.SensorArray" Multiplicity="0..1" />
+          <End Role="Sensor" Type="TemperatureSensorDataModel.Store.Sensor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SensorArray">
+              <PropertyRef Name="SensorArrayID" />
+            </Principal>
+            <Dependent Role="Sensor">
+              <PropertyRef Name="SensorArrayID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Tempratur__Senso__15502E78">
+          <End Role="Sensor" Type="TemperatureSensorDataModel.Store.Sensor" Multiplicity="0..1" />
+          <End Role="TempratureReading" Type="TemperatureSensorDataModel.Store.TempratureReading" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sensor">
+              <PropertyRef Name="SensorID" />
+            </Principal>
+            <Dependent Role="TempratureReading">
+              <PropertyRef Name="SensorID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="TemperatureSensorDataModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="TemperatureSensorDataEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="Sensors" EntityType="TemperatureSensorDataModel.Sensor" />
+          <EntitySet Name="SensorArrays" EntityType="TemperatureSensorDataModel.SensorArray" />
+          <EntitySet Name="TempratureReadings" EntityType="TemperatureSensorDataModel.TempratureReading" />
+          <AssociationSet Name="FK__Sensor__SensorAr__1273C1CD" Association="TemperatureSensorDataModel.FK__Sensor__SensorAr__1273C1CD">
+            <End Role="SensorArray" EntitySet="SensorArrays" />
+            <End Role="Sensor" EntitySet="Sensors" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Tempratur__Senso__15502E78" Association="TemperatureSensorDataModel.FK__Tempratur__Senso__15502E78">
+            <End Role="Sensor" EntitySet="Sensors" />
+            <End Role="TempratureReading" EntitySet="TempratureReadings" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Sensor">
+          <Key>
+            <PropertyRef Name="SensorID" />
+          </Key>
+          <Property Name="SensorID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="NAME" Type="String" Nullable="false" MaxLength="300" Unicode="false" FixedLength="false" />
+          <Property Name="SensorArrayID" Type="Int32" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="300" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="SensorArray" Relationship="TemperatureSensorDataModel.FK__Sensor__SensorAr__1273C1CD" FromRole="Sensor" ToRole="SensorArray" />
+          <NavigationProperty Name="TempratureReadings" Relationship="TemperatureSensorDataModel.FK__Tempratur__Senso__15502E78" FromRole="Sensor" ToRole="TempratureReading" />
+        </EntityType>
+        <EntityType Name="SensorArray">
+          <Key>
+            <PropertyRef Name="SensorArrayID" />
+          </Key>
+          <Property Name="SensorArrayID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="300" Unicode="false" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Sensors" Relationship="TemperatureSensorDataModel.FK__Sensor__SensorAr__1273C1CD" FromRole="SensorArray" ToRole="Sensor" />
+        </EntityType>
+        <EntityType Name="TempratureReading">
+          <Key>
+            <PropertyRef Name="TempratureReadingID" />
+          </Key>
+          <Property Name="TempratureReadingID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="SensorID" Type="Int32" />
+          <Property Name="Temprature" Type="Double" Nullable="false" />
+          <Property Name="TimeStamp" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Sensor" Relationship="TemperatureSensorDataModel.FK__Tempratur__Senso__15502E78" FromRole="TempratureReading" ToRole="Sensor" />
+        </EntityType>
+        <Association Name="FK__Sensor__SensorAr__1273C1CD">
+          <End Role="SensorArray" Type="TemperatureSensorDataModel.SensorArray" Multiplicity="0..1" />
+          <End Role="Sensor" Type="TemperatureSensorDataModel.Sensor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SensorArray">
+              <PropertyRef Name="SensorArrayID" />
+            </Principal>
+            <Dependent Role="Sensor">
+              <PropertyRef Name="SensorArrayID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Tempratur__Senso__15502E78">
+          <End Role="Sensor" Type="TemperatureSensorDataModel.Sensor" Multiplicity="0..1" />
+          <End Role="TempratureReading" Type="TemperatureSensorDataModel.TempratureReading" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sensor">
+              <PropertyRef Name="SensorID" />
+            </Principal>
+            <Dependent Role="TempratureReading">
+              <PropertyRef Name="SensorID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="TemperatureSensorDataModelStoreContainer" CdmEntityContainer="TemperatureSensorDataEntities">
+          <EntitySetMapping Name="Sensors">
+            <EntityTypeMapping TypeName="TemperatureSensorDataModel.Sensor">
+              <MappingFragment StoreEntitySet="Sensor">
+                <ScalarProperty Name="SensorID" ColumnName="SensorID" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="SensorArrayID" ColumnName="SensorArrayID" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SensorArrays">
+            <EntityTypeMapping TypeName="TemperatureSensorDataModel.SensorArray">
+              <MappingFragment StoreEntitySet="SensorArray">
+                <ScalarProperty Name="SensorArrayID" ColumnName="SensorArrayID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TempratureReadings">
+            <EntityTypeMapping TypeName="TemperatureSensorDataModel.TempratureReading">
+              <MappingFragment StoreEntitySet="TempratureReading">
+                <ScalarProperty Name="TempratureReadingID" ColumnName="TempratureReadingID" />
+                <ScalarProperty Name="SensorID" ColumnName="SensorID" />
+                <ScalarProperty Name="Temprature" ColumnName="Temprature" />
+                <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

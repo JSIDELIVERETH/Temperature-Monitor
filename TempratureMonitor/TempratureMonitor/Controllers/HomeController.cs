@@ -12,6 +12,7 @@ namespace TempratureMonitor.Controllers
         //
         // GET: /Home/
         public static HCMIS.Sensors.Service1SoapClient sensorService = new HCMIS.Sensors.Service1SoapClient();
+        
         public ActionResult Index()
         {
             return View();
@@ -21,7 +22,7 @@ namespace TempratureMonitor.Controllers
         public JsonResult UpdatedTempratures()
         {
             Random random = new Random();
-            return Json(GetSensorReading());
+            return Json(GetFakeSensorReading());
         }
 
         public List<Double> GetFakeSensorReading()

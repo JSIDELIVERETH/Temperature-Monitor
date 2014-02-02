@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TemperatureSensorDataModelStoreContainer" CdmEntityContainer="TemperatureSensorDataEntities">
+    <EntitySetMapping Name="Sensors">
+      <EntityTypeMapping TypeName="TemperatureSensorDataModel.Sensor">
+        <MappingFragment StoreEntitySet="Sensor">
+          <ScalarProperty Name="SensorID" ColumnName="SensorID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="SensorArrayID" ColumnName="SensorArrayID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SensorArrays">
+      <EntityTypeMapping TypeName="TemperatureSensorDataModel.SensorArray">
+        <MappingFragment StoreEntitySet="SensorArray">
+          <ScalarProperty Name="SensorArrayID" ColumnName="SensorArrayID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TempratureReadings">
+      <EntityTypeMapping TypeName="TemperatureSensorDataModel.TempratureReading">
+        <MappingFragment StoreEntitySet="TempratureReading">
+          <ScalarProperty Name="TempratureReadingID" ColumnName="TempratureReadingID" />
+          <ScalarProperty Name="SensorID" ColumnName="SensorID" />
+          <ScalarProperty Name="Temprature" ColumnName="Temprature" />
+          <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

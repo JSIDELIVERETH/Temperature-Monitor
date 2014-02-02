@@ -1,0 +1,8 @@
+D:\Projects\Primary\TempratureMonitor\Service\bin\Debug\Service.dll.config
+D:\Projects\Primary\TempratureMonitor\Service\bin\Debug\Service.dll
+D:\Projects\Primary\TempratureMonitor\Service\bin\Debug\Service.pdb
+D:\Projects\Primary\TempratureMonitor\Service\bin\Debug\EntityFramework.dll
+D:\Projects\Primary\TempratureMonitor\Service\bin\Debug\EntityFramework.xml
+D:\Projects\Primary\TempratureMonitor\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+D:\Projects\Primary\TempratureMonitor\Service\obj\Debug\Service.dll
+D:\Projects\Primary\TempratureMonitor\Service\obj\Debug\Service.pdb
