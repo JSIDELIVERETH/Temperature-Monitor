@@ -12,6 +12,5 @@
   </metadata>
   <files>
   <file src = "TempratureMonitor\**\*.*" target="TempratureMonitor"/>
-  <file src = "TempratureMonitor\bin\**\*.*" target="TempratureMonitor\Published\bin"/>
     </files>
 </package>
