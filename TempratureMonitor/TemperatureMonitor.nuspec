@@ -11,7 +11,7 @@
     <releaseNotes>XXXI release</releaseNotes>
   </metadata>
   <files>
-  <file src = "TempratureMonitor\bin\**\*.*" target="TempratureMonitor\Published\bin"/>
   <file src = "TempratureMonitor\**\*.*" target="TempratureMonitor"/>
-  </files>
+  <file src = "TempratureMonitor\bin\**\*.*" target="TempratureMonitor\Published\bin"/>
+    </files>
 </package>
