@@ -11,6 +11,6 @@
     <releaseNotes>XXXI release</releaseNotes>
   </metadata>
   <files>
-  <file src = "TempratureMonitor\**\*.*" target="TempratureMonitor"/>
+  <file src = "TempratureMonitor\**\*.*"/>
     </files>
 </package>
